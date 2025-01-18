@@ -87,11 +87,19 @@
           Hi, My name is <span class="purple">Abhi</span>
           <div>and I am a Passionate</div>
           <div>Web Developer</div>
+          <span id="element"></span>
         </div>
         <div class="rightSection">
           <img src="bg.png" alt="img" />
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
