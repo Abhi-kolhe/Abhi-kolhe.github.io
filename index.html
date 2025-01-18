@@ -46,11 +46,17 @@
         color: rgb(115, 115, 226);
         font-size: 1.01rem;
       }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
       .firstSection {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 130px 0;
       }
       .firstSection > div {
         width: 36%;
@@ -63,6 +69,33 @@
       }
       .purple {
         color: rgb(170, 107, 228);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        background: white;
+        width: 1px;
+        height: 93px;
+        margin: 0 100px;
       }
     </style>
   </head>
@@ -86,18 +119,36 @@
         <div class="leftSection">
           Hi, My name is <span class="purple">Abhi</span>
           <div>and I am a Passionate</div>
-          <div>Web Developer</div>
+          <!-- <div>Web Developer</div> -->
           <span id="element"></span>
         </div>
         <div class="rightSection">
           <img src="bg.png" alt="img" />
         </div>
       </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray"> What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="developer.png" alt="" />
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+      </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+        strings: [
+          "Web Developer",
+          "web Designer",
+          "Freelancer",
+          "Web Developer",
+        ],
         typeSpeed: 50,
       });
     </script>
