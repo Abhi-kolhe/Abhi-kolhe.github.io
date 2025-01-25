@@ -3,32 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhi -Portfolio</title>
+    <title>Abhi - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <style>
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       body {
         background-color: rgb(0, 0, 33);
         color: white;
         font-family: "Poppins", sans-serif;
+        line-height: 1.6;
       }
       nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 80px;
         background-color: rgb(18, 18, 62);
+        padding: 0 20px;
       }
       .left {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
       }
       nav ul {
         display: flex;
@@ -36,15 +44,17 @@
       }
       nav ul li {
         list-style: none;
-        margin: 0 23px;
+        margin: 0 15px;
       }
       nav ul li a {
         text-decoration: none;
         color: white;
+        font-size: 1rem;
+        transition: color 0.3s, font-size 0.3s;
       }
       nav ul li a:hover {
         color: rgb(115, 115, 226);
-        font-size: 1.01rem;
+        font-size: 1.1rem;
       }
       main hr {
         border: 0;
@@ -57,15 +67,20 @@
         align-items: center;
         justify-content: space-around;
         margin: 130px 0;
+        padding: 0 20px;
       }
       .firstSection > div {
-        width: 36%;
+        width: 45%;
       }
       .leftSection {
         font-size: 3rem;
+        line-height: 1.2;
       }
       .rightSection img {
-        width: 80%;
+        width: 100%;
+        max-width: 450px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
       .purple {
         color: rgb(170, 107, 228);
@@ -76,17 +91,36 @@
       #element {
         color: rgb(170, 107, 228);
       }
+      .buttons {
+        margin-top: 20px;
+      }
+      .buttons a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(115, 115, 226);
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 1rem;
+      }
+      .buttons a:hover {
+        background-color: rgb(170, 107, 228);
+        transform: translateY(-2px);
+      }
       .secondSection {
         max-width: 80vw;
         margin: auto;
         height: 80vh;
+        padding: 0 20px;
       }
       .secondSection h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
+        margin-bottom: 20px;
       }
       .secondSection .box {
         background: white;
-        width: 77vw;
+        width: 100%;
         height: 2px;
         margin: 56px 0;
         display: flex;
@@ -115,6 +149,53 @@
         width: 150px;
         font-size: 9px;
       }
+      footer {
+        background-color: rgb(18, 18, 62);
+        padding: 20px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+      }
+      .footer-section h3 {
+        margin-bottom: 15px;
+      }
+      .footer-section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+      .footer-section ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+      }
+      .footer-section ul li a:hover {
+        color: rgb(115, 115, 226);
+      }
+      .footer-section p {
+        margin: 10px 0;
+      }
+      .social-icons {
+        display: flex;
+        gap: 10px;
+      }
+      .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s, transform 0.3s;
+      }
+      .social-icons a:hover {
+        color: rgb(115, 115, 226);
+        transform: translateY(-2px);
+      }
     </style>
   </head>
   <body>
@@ -139,6 +220,15 @@
           <div>and I am a Passionate</div>
           <!-- <div>Web Developer</div> -->
           <span id="element"></span>
+          <div class="buttons">
+            <a href="resume.pdf" download>Download Resume</a>
+            <a
+              href="https://github.com/Abhi-kolhe"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit GitHub</a
+            >
+          </div>
         </div>
         <div class="rightSection">
           <img src="bg.png" alt="img" />
@@ -161,7 +251,7 @@
           <div class="vertical">
             <img class="image-top" src="insta.png" alt="" />
             <div class="vertical-title">
-              node.js Developer-at instagram (2012-2014)
+              Node.js Developer at Instagram (2012-2014)
             </div>
             <div class="vertical-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -172,7 +262,7 @@
           <div class="vertical">
             <img class="image-top" src="fb.png" alt="" />
             <div class="vertical-title">
-              HTML Developer-at facebook(2014-2018)
+              HTML Developer at Facebook (2014-2018)
             </div>
             <div class="vertical-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -183,7 +273,7 @@
           <div class="vertical">
             <img class="image-top" src="yt.png" alt="" />
             <div class="vertical-title">
-              HTML Developer-at YouTube (2018-2023)
+              HTML Developer at YouTube (2018-2023)
             </div>
             <div class="vertical-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -194,12 +284,45 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-section">
+        <h3>Abhi's Developer Portfolio</h3>
+        <p>
+          Welcome to my personal portfolio website. Here you can find my latest
+          projects and contact information.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Me</h3>
+        <p>Email: abhi@example.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: [
           "Web Developer",
-          "web Designer",
+          "Web Designer",
           "Freelancer",
           "Web Developer",
         ],
