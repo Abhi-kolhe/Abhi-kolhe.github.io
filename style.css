@@ -7,19 +7,36 @@ body {
   background-color: rgb(3, 0, 28);
   color: white;
   font-family: "Poppins", sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
   line-height: 1.6;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 70px;
   background-color: rgb(48, 30, 103);
   padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .left {
-  font-size: 1.8rem;
-  font-weight: 600;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 45px;
+  padding: 5px;
+  padding-top: 9px;
+  width: 150px;
+  margin: 0 28px;
+  border-radius: 20px;
+}
+.left img {
+  height: auto;
+  object-fit: contain;
+  width: 100%;
 }
 nav ul {
   display: flex;
@@ -37,7 +54,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(115, 115, 226);
-  font-size: 1.1rem;
+  font-size: 1.02rem;
 }
 main hr {
   border: 0;
