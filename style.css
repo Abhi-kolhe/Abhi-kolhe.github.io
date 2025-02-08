@@ -6,6 +6,9 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
+h1 {
+  font-size: 2.5rem;
+}
 body {
   background-color: rgb(3, 0, 28);
   color: white;
@@ -250,47 +253,32 @@ main hr {
 /* services end */
 footer {
   background-color: rgb(48, 30, 103);
-  padding: 20px 20px;
-  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  color: grey;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer-section {
   flex: 1;
   min-width: 200px;
   margin: 10px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-section quick-links {
-  line-height: 0.5;
-}
-.footer-section h3 {
-  margin-bottom: 15px;
-}
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-.footer-section ul li a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-.footer-section ul li a:hover {
-  color: rgb(115, 115, 226);
-}
+
 .footer-section p {
   margin: 10px 0;
+  display: block;
 }
 .social-icons {
   display: flex;
   gap: 10px;
 }
 .social-icons a {
-  color: white;
+  color: grey;
   font-size: 1.5rem;
   transition: color 0.3s, transform 0.3s;
 }
@@ -321,6 +309,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block: 70px;
   width: 100%;
 }
 .thirdSection .service-cards {
@@ -361,9 +350,7 @@ footer {
 
 /* skill start */
 .skills {
-  display: ;
   text-align: center;
-
   height: 100%;
   width: 100%;
   /* border: 2px solid white; */
@@ -373,12 +360,11 @@ footer {
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
-  border: 2px solid white;
 }
 .skill .skill-cards {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
@@ -393,6 +379,114 @@ footer {
 }
 .skill .card-skill img {
   height: 70px;
-  width: 70px;
-  object-fit: cover;
+  width: 60px;
+  object-fit: contain;
+}
+/* fourth-section-contact */
+
+.secondcont {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+.last-text p {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: rgb(7, 85, 91);
+  font-weight: 300;
+  margin-top: 70px;
+}
+.fourthsection .contact {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  padding: 5%;
+  gap: 5em;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.firstcont {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.secondcont {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.contact-form .send {
+  background-color: rgb(48, 30, 103);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .send:hover {
+  background-color: rgb(182, 234, 218);
+  color: rgb(48, 30, 103);
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-list img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  margin-right: 10px;
+}
+
+.contact-list p {
+  margin: 0;
+  font-size: 1rem;
 }
